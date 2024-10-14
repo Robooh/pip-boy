@@ -48,5 +48,4 @@ export default PipboyContainer;
 
 
 
-// based on https://codepen.io/chris22smith/pen/YZPrjr
-// https://codepen.io/carterfromsl/pen/OJjxXKJ new vegas pipboy
+
