@@ -1,6 +1,6 @@
 module.exports = {
     branch: 'gh-pages',
-    repo: 'https://github.com/Robooh/Aurora.git',
+    repo: 'https://github.com/Robooh/pip-boy',
     user: {
         name: 'Robooh',
         email: 'dv.silvaa551@gmail.com'
