@@ -32,7 +32,7 @@ export const Playlist = [
             {src:Burn, title: 'Burn"to the ground' },
             {src:Curse, title: 'My Curse' },
         ],
-        message: 'Ayo"is 3Dough! and Dj"Atomika,bringing you that heat'
+        message: 'Ayo"is 3-Dog! and Dj"Atomika,bringing you that heat'
     },
 
     {
