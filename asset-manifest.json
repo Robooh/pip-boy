@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0ff8e8f7.css",
+    "main.js": "/static/js/main.8ccda6a5.js",
+    "static/js/453.c8658561.chunk.js": "/static/js/453.c8658561.chunk.js",
+    "static/media/Tp.mp3": "/static/media/Tp.574ae66f867adbc2e14d.mp3",
+    "static/media/Keep.mp3": "/static/media/Keep.e8952c570130570725ef.mp3",
+    "static/media/Curse.mp3": "/static/media/Curse.d97395811c7761e8bf13.mp3",
+    "static/media/Burn.mp3": "/static/media/Burn.6c43e6d233ed5f49c1eb.mp3",
+    "static/media/Disco.mp3": "/static/media/Disco.d0f1563b38ee0594784b.mp3",
+    "static/media/Day.mp3": "/static/media/Day.6e077ee82c6eb7bf3706.mp3",
+    "static/media/Orange.mp3": "/static/media/Orange.cdc9587a7e3b38cfbe24.mp3",
+    "static/media/Fire.mp3": "/static/media/Fire.d4fba17add53d9d59b5c.mp3",
+    "static/media/Six.mp3": "/static/media/Six.479464a2d53ecc5b6ef8.mp3",
+    "index.html": "/index.html",
+    "main.0ff8e8f7.css.map": "/static/css/main.0ff8e8f7.css.map",
+    "main.8ccda6a5.js.map": "/static/js/main.8ccda6a5.js.map",
+    "453.c8658561.chunk.js.map": "/static/js/453.c8658561.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ff8e8f7.css",
+    "static/js/main.8ccda6a5.js"
+  ]
+}
