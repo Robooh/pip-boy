@@ -1,0 +1,119 @@
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-side {
+  width: 30%;
+  padding: 20px;
+  position: relative;
+}
+
+.left-side::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  bottom: 25%;
+  right: 0;
+  border-right: 2px solid #ccc;
+  width: 1px;
+}
+
+.right-side {
+  width: 70%;
+  padding: 20px;
+}
+
+.left-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-side li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.left-side li button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.left-side li button:hover {
+  background-color: #444;
+}
+
+.right-side {
+  width: 70%;
+  padding: 20px;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-player-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.audio-player-container audio {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.control-button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.control-button:hover {
+  background-color: #444;
+}
+
+.custom-audio-player {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+.previous-button::before {
+  content: "\25c0";
+}
+
+.next-button::after {
+  content: "\25b6";
+  
+}
+
+
+
+
+

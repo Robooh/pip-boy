@@ -1,0 +1,126 @@
+body {
+    background-color:#000;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+  }
+
+
+  .pipboy-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid #444;
+    padding: 20px;
+  }
+
+.screen {
+    width: 50vw;
+    height: 50vh;
+    background-image:radial-gradient(#444, #111);
+    box-shadow:0 0 5vmin 1vmin #000 inset;
+    box-sizing:border-box;
+    font-family:'Fira Mono', monospace;
+    font-size:20px;
+    overflow:hidden;
+    padding:10vmin;
+    border: 2px #333;
+    border-style: double;
+    border-radius: 6px;
+    position: relative;
+    animation:colorPulse 5s infinite ease-in-out;
+  }
+  
+  .screen:before {
+    animation:wave 7s infinite ease-in-out;
+    content:"";
+    height: 100%;
+    left:0;
+    opacity:0.5;
+    position:absolute;
+    right:0;
+    z-index:1;
+    top: 0;
+    transform: translateY(0);
+    animation-iteration-count: infinite;
+  }
+  
+  .screen:after {
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+    bottom:0;
+    content:"";
+    left:0;
+    pointer-events:none;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+  }
+  
+  p:last-child:after {
+    animation:blink 1s infinite;
+    content:"_";
+  }
+  
+  @keyframes colorPulse {
+    0%, 100% {
+      color:#0c0;
+    }
+    48%, 52% {
+      color:#090;
+    }
+    50% {
+      color:#060;
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      box-shadow:0 -10vh 20vh #0c0;
+      transform: translateY(-100%);
+    }
+    48%, 52% {
+      box-shadow:0 -10vh 20vh #090;
+    }
+    50% {
+      box-shadow:0 -10vh 20vh #060;
+    }
+    100% {
+      box-shadow:0 -10vh 20vh #0c0;
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity:0;
+    }
+  }
+
+
+
+  .button-container {
+    display:  flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 70px;
+    height: 70px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .button.active {
+    background-color: #ffa07a;
+    box-shadow: 0 0 10px #ffa07a;
+  }

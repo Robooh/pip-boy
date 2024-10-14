@@ -1,0 +1,54 @@
+.misc-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .misc-list-container {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .misc-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .misc-list-container li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all ease-in-out 0.4s;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .misc-list-container li:hover {
+    border: 2px solid #aaa;
+  }
+  
+  .misc-checkbox {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ccc;
+    background-color: unset;
+    margin-right: 10px; 
+  }
+  
+  .misc-checkbox.checked {
+    background-color: #ffffff;
+  }
+  
+  .misc-selected {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .misc-content-container {
+    width: 70%;
+    padding: 20px;
+  }
