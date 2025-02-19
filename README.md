@@ -1,5 +1,7 @@
-Project is set with a Base Pipboy-screen effect
+Project is almost set on pc version
 
-Needs updated on the design and on the functions
+Mobile is still a lot more bugged than the expected
 
-Set more later...
+need to make more updates untils is fully functional
+
+
