@@ -7,70 +7,77 @@
     }
 }
 
-@media (max-width: 480px) {
+/* Tablet Landscape/Small Desktop */
+@media (max-width: 768px) {
     .screen {
-        width: 95vw;
-        height: 65vh;
+        height: 50vh;
+        width: 50vw;
+        padding: 5vmin;
+        font-size: 18px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        width: 50vw;
+    }
+
+    .button {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+    }
+    .button span {
         font-size: 14px;
-        padding: 3vmin;
+    }
+}
+
+/* Tablets */
+@media (max-width: 600px) {
+    .screen {
+        height: 40vh;
+        width: 40vw;
+        padding: 4vmin;
+        font-size: 16px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+        width: 40vw;
     }
 
     .button {
         width: 50px;
         height: 50px;
+        margin: 0 8px;
+    }
+    .button span {
+        font-size: 12px;
     }
 }
 
-@media (max-height: 600px) {
+/* Celulares */
+@media (max-width: 400px) {
     .screen {
         height: 60vh;
+        width: 90vw;
+        padding: 3vmin;
+        font-size: 14px;
+    }
+
+    .button-container {
+        margin-top: 5px;
+        width: 90vw;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    .button span {
+        font-size: 10px;
     }
 }
-
-@media (max-width: 768px) {
-    .radio-container {
-      flex-direction: column;
-      height: auto;
-      min-height: 100vh;
-      padding: 10px;
-    }
-  
-    .left-side {
-      width: 100%;
-      border-right: none;
-      border-bottom: 2px solid #00ff00;
-      padding: 10px;
-    }
-  
-    .left-side li button {
-      padding: 12px;
-      font-size: 1rem;
-    }
-  
-    .right-side {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .radio-display {
-      padding: 15px;
-    }
-  
-    .buttons {
-      gap: 15px;
-      margin-top: 20px;
-    }
-  
-    .previous-button,
-    .next-button {
-      width: 60px;
-      height: 60px;
-      font-size: 1.2rem;
-    }
-  
-    .custom-audio-player {
-      margin-top: 15px;
-      padding: 8px;
-    }
-  }
-  

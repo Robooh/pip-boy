@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Radio.css';
+import './RadioMobile.css';
 import AudioPlayer from 'react-audio-player';
 import { Playlist } from './Misc/Playlist';
-
 
 const RadioScreen = () => {
   const [currentPlaylist, setCurrentPlaylist] = useState(0);
@@ -25,11 +25,6 @@ const RadioScreen = () => {
       }
     }
   }, [volume]);
-
-
-  // const handleVolumeChange = (e) => {
-  //   setVolume(parseFloat(e.target.value));
-  // };
 
   const handleStationChange = (index) => {
     setIsStatic(true);
@@ -83,38 +78,26 @@ const RadioScreen = () => {
               {Playlist[currentPlaylist].frequency}
             </div>
           </div>
-          {/* <div className="volume-control">
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={volume}
-            onChange={handleVolumeChange}
-            disabled={!audioRef.current}
-          /> */}
-
-          </div>
-          <AudioPlayer
-            ref={audioRef}
-            src={Playlist[currentPlaylist].tracks[currentTrack].src}
-            controls
-            onEnded={() => {
-              handleNextTrack();
-              setIsPlaying(true);
-            }}
-            playing={isPlaying}
-            autoPlay={isPlaying}
-            volume={volume}
-            className="custom-audio-player"
-          />
-          <div className='buttons'>
-            <button className="previous-button" onClick={handlePreviousTrack}></button>
-            <button className="next-button" onClick={handleNextTrack}></button>
-          </div>
+        </div>
+        <AudioPlayer
+          ref={audioRef}
+          src={Playlist[currentPlaylist].tracks[currentTrack].src}
+          controls
+          onEnded={() => {
+            handleNextTrack();
+            setIsPlaying(true);
+          }}
+          playing={isPlaying}
+          autoPlay={isPlaying}
+          volume={volume}
+          className="custom-audio-player"
+        />
+        <div className='buttons'>
+          <button className="previous-button" onClick={handlePreviousTrack}>←</button>
+          <button className="next-button" onClick={handleNextTrack}>→</button>
         </div>
       </div>
-    // </div>
+    </div>
   );
 };
 

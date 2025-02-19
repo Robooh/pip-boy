@@ -7,6 +7,7 @@
     width: 30%;
     padding: 20px;
     border-right: 1px solid #ccc;
+    height: 100%;
   }
   
   .misc-list-container ul {
@@ -28,6 +29,8 @@
   
   .misc-list-container li:hover {
     border: 2px solid #aaa;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
   }
   
   .misc-checkbox {

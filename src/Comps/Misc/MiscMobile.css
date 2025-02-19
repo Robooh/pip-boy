@@ -1,0 +1,49 @@
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .misc-container {
+    flex-direction: column;
+  }
+
+  .misc-list-container,
+  .misc-content-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .misc-list-container {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .misc-list-container li {
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .misc-selected {
+    font-size: 16px;
+  }
+
+  .misc-checkbox {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .misc-list-container li {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .misc-selected {
+    font-size: 14px;
+  }
+
+  .misc-content-container {
+    padding: 5px;
+  }
+}

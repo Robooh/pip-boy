@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import './Misc.css'
+import './Misc.css';
+import './MiscMobile.css';
+
 
 const MiscScreen = () => {
   const [selectedItem, setSelectedItem] = useState(null);
