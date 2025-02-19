@@ -1,15 +1,33 @@
-import React, { useState } from "react";
-import './pbc.css'
-import { Link } from "react-router-dom";
-const PipboyContainer = ({ children}) => {
-  const [currentPage, setCurrentPage] = useState("/")
+import React, { useState, useEffect } from "react";
+import './pbc.css';
+import './pbcMobile.css';
+
+import { Link, useLocation } from "react-router-dom";
+const PipboyContainer = ({ children }) => {
+  const [currentPage, setCurrentPage] = useState("/");
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsTransitioning(true);
+    const timer = setTimeout(() => {
+      setIsTransitioning(false);
+      setCurrentPage(location.pathname);
+    }, 300); 
+    return () => clearTimeout(timer);
+  }, [location]);
+
+
+  const isMobile = window.innerWidth <= 768;
 
   return (
-    <div className="pipboy-container">
+    <div className={`pipboy-container ${isMobile ? 'mobile' : ''}`}>
+
       <div>
-        <div className="screen">
+        <div className={`screen ${isTransitioning ? 'transitioning' : ''}`}>
           {children}
         </div>
+
       </div>
       <div className="button-container">
         <Link to="/">
@@ -44,8 +62,3 @@ const PipboyContainer = ({ children}) => {
 };
 
 export default PipboyContainer;
-
-
-
-
-

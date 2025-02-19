@@ -1,0 +1,76 @@
+@keyframes colorPulseMobile {
+    0%, 100% {
+        color: #0c0;
+    }
+    50% {
+        color: #060;
+    }
+}
+
+@media (max-width: 480px) {
+    .screen {
+        width: 95vw;
+        height: 65vh;
+        font-size: 14px;
+        padding: 3vmin;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-height: 600px) {
+    .screen {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .radio-container {
+      flex-direction: column;
+      height: auto;
+      min-height: 100vh;
+      padding: 10px;
+    }
+  
+    .left-side {
+      width: 100%;
+      border-right: none;
+      border-bottom: 2px solid #00ff00;
+      padding: 10px;
+    }
+  
+    .left-side li button {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .right-side {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .radio-display {
+      padding: 15px;
+    }
+  
+    .buttons {
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .previous-button,
+    .next-button {
+      width: 60px;
+      height: 60px;
+      font-size: 1.2rem;
+    }
+  
+    .custom-audio-player {
+      margin-top: 15px;
+      padding: 8px;
+    }
+  }
+  
