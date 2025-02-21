@@ -34,16 +34,5 @@
 
 /* Small Mobile Devices */
 @media (max-width: 480px) {
-  .misc-list-container li {
-    font-size: 12px;
-    padding: 5px;
-  }
 
-  .misc-selected {
-    font-size: 14px;
-  }
-
-  .misc-content-container {
-    padding: 5px;
-  }
 }

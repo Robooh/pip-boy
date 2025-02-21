@@ -58,7 +58,11 @@
 }
 
 /* Celulares */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .pipboy-container {
+        padding: 5px;
+    }
+
     .screen {
         height: 60vh;
         width: 90vw;
